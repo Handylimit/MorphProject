@@ -4,26 +4,25 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "MPBoardUnitActor.generated.h"
-
-
-//class UCameraComponent;
+#include "UIDataManager.generated.h"
 
 UCLASS()
-class MORPHPROJECT_API AMPBoardUnitActor : public AActor
+class MORPHPROJECT_API AUIDataManager : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	AMPBoardUnitActor();
+	AUIDataManager();
 
+	void SpawnNewVehicle(int VehicleType);
+
+	void EditColor(int Index);
+	void EditDescription(int Index);
+	void EditPrice(int Index);
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-	
-	//UCameraComponent* CamComp;
-	
 
 public:	
 	// Called every frame

@@ -1,11 +1,10 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "Yang/Board/MPBoardUnitActor.h"
-//#include "Camera/CameraComponent.h"
+#include "Yang/UIDataManager.h"
 
 // Sets default values
-AMPBoardUnitActor::AMPBoardUnitActor()
+AUIDataManager::AUIDataManager()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -13,14 +12,14 @@ AMPBoardUnitActor::AMPBoardUnitActor()
 }
 
 // Called when the game starts or when spawned
-void AMPBoardUnitActor::BeginPlay()
+void AUIDataManager::BeginPlay()
 {
 	Super::BeginPlay();
 	
 }
 
 // Called every frame
-void AMPBoardUnitActor::Tick(float DeltaTime)
+void AUIDataManager::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
