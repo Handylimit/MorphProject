@@ -23,6 +23,9 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void SetUpCameraTransform(bool Navigation);
 
+	//distinguish between BP function and event
+	//UFUNCTION(BlueprintCallable,BlueprintImplementableEvent)
+	
 	UFUNCTION(BlueprintCallable)
 	void SetCameraByIndex(int32 Index);
 
